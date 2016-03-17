@@ -19,12 +19,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.subspec 'UTLib' do |sl|
-    sl.source_files = 'UTLib/**/*'
+    sl.source_files = 'UTLib/**/*.{h,m,c}'
     sl.public_header_files = 'UTLib/**/*.h'
   end
 
   s.subspec 'UTTable' do |st|
-    st.source_files = 'UTTable/**/*'
+    st.source_files = 'UTTable/**/*.{h,m,c}'
     st.public_header_files = 'UTTable/**/*.h'
     st.dependency 'UTLib/UTLib'
   end
